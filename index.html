@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        .parent {
+            height: 400px;
+            background: blue;
+        }
+        .child {
+            display: flex;
+            flex-direction:column;
+            justify-content: space-between;
+            height: 80px;
+            background: green;
+            margin: 20 20;
+        }
+    </style>
+</head>
+<body class="bg-neutral-200 ">   
+    <section class="">
+        <!-- Nav Bar -->
+        <nav class="">
+            <div class="flex relative bg-white pr-3  justify-between items-center bg-neutral-400">
+                <!-- Company Logo -->
+            <a href="#">
+                <div class="text-white bg-neutral-400 text-2xl hover:bg-blue-500 rounded-full ml-2 p-4 pr-3 py-4 md:justify-start md:space-x-10">
+                    Company Logo 
+                </div>
+                 
+            </a>
+            <!-- Home -->
+            <div class="py-5 md:justify-start md:space-x-15">
+                <a href="#">
+                    <span class="text-white p-3 rounded-full hover:bg-blue-500 hover:text-white ">
+                        Home
+                    </span>
+                </a>
+                <!-- Updates -->
+                <a href="#">
+                    <span class="text-white p-3 rounded-full hover:bg-blue-500">
+                        Updates
+                    </span>
+                </a>
+                <!-- Search -->
+                <a href="#">
+                    <span class="text-white p-3 rounded-full hover:bg-blue-500 outline-none">
+                        <input type="text" placeholder="Search for anything..." class="placeholder:italic placeholder:text-slate-400 bg-white  border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm text-black">
+                    </span>
+                </a>
+                <!-- Subscribe -->
+                <a href="#">
+                    <span class="bg-red-600 text-white p-4 rounded-full hover:bg-red-700">
+                        Subscribe
+                    </span>
+                </a>
+            </div>
+
+            </div>
+        </nav>
+        <!-- Nav Bar Ends here -->
+        <!-- Header -->
+        <header class=" m-10 text-center p-3  ">
+            <div class="max-w-4xl mx-auto" >
+                    <h1 class="text-4xl">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+                    <h2 class="text-sm">
+                        By GeoSpoc an Ola Company.
+                    </h2>
+            </div>
+            <div class="p-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem pariatur laborum libero sint temporibus natus nulla dolorem aliquam vitae quas, consectetur totam ducimus, minima quia vero ipsam ipsum eligendi quaerat.
+            </div>
+
+            
+        </header>
+    </section>
+
+    <div class="card parent">
+        <div class="child">
+            <h1>Card Heading</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>
