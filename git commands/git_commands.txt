@@ -1,0 +1,57 @@
+git branch <branch name> -> to create new branch
+
+git branch -> shows available branches
+
+*master  -> I'm in master branch
+satya -> sub branch
+
+git checkout -b <branch name>
+
+git add . -> to add all files
+
+git add <file name> - > to add specific file
+
+git commit -m "message" -> to display message
+
+git push origin <branch name> -> to push file in branch
+
+
+
+C:\Users\satyawan.auti>git branch
+fatal: not a git repository (or any of the parent directories): .git
+
+C:\Users\satyawan.auti>cd desktop
+
+C:\Users\satyawan.auti\Desktop>cd First Program
+
+C:\Users\satyawan.auti\Desktop\First Program>git branch
+* master
+
+C:\Users\satyawan.auti\Desktop\First Program>git branch test1
+
+C:\Users\satyawan.auti\Desktop\First Program>git branch
+* master
+  test1
+
+C:\Users\satyawan.auti\Desktop\First Program>git checkout test1
+Switched to branch 'test1'
+M       index.html
+
+C:\Users\satyawan.auti\Desktop\First Program>git branch
+  master
+* test1
+
+C:\Users\satyawan.auti\Desktop\First Program>git checkout master
+Switched to branch 'master'
+M       index.html
+Your branch is up to date with 'origin/master'.
+
+C:\Users\satyawan.auti\Desktop\First Program>git checkout -b geospoc-dev
+Switched to a new branch 'geospoc-dev'
+
+C:\Users\satyawan.auti\Desktop\First Program>git branch
+* geospoc-dev
+  master
+  test1
+
+C:\Users\satyawan.auti\Desktop\First Program>
