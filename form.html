@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <script src="./js/form.js">
+
+    </script>
     <style>
         .center {
                     margin-left: auto;
                     margin-right: auto;
-                }
-                .top{
-                    padding-bottom: 500px;
                 }
 
     </style>
@@ -19,7 +19,7 @@
 </head>
 <body>
 
-    <form style="">
+    <form method="post">
         <table  class="center"  >
             <caption style="color: red; font-weight: bold; ">
                 
@@ -137,7 +137,7 @@
                     <label for="email">Email </label>
                 </td>
                 <td>
-                    <input type="email" name="email" id="email" placeholder="">
+                    <input type="email" name="email" id="email" placeholder=""> 
                 </td>
             </tr>
 
@@ -147,7 +147,7 @@
                     <label for="mobile"> Mobile</label>
                 </td>
                 <td>
-                    <input type="text" name="mobile" id="mobile" placeholder="+91 ">
+                    <input type="text" name="mobile" id="mobile" placeholder="+91 "> <p id="mob"></p>
                 </td>
             </tr>
 
