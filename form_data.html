@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <script src="./js/form.js" >
+        function userDetails(){
+            let userData = {};
+            let usersData = {};
+
+            let userSalutation = document.getElementsByName("salutation").value;
+            let userFirstName = document.getElementById("firstName").value;
+            let userLastName = document.getElementById("lastName").value;
+            let userMailAddress1 = document.getElementById("mailAddress1").value;
+            let userMailAddress2 = document.getElementById("mailAddress2").value;
+            let userCity = document.getElementById("city").value;
+            let userState = document.getElementById("state").value;
+            let userZip = document.getElementById("zip").value;
+            let userPhoto = document.getElementById("photo").value;
+            let userEmail = document.getElementById("email").value;
+            let userMobile = document.getElementById("mobile").value;
+            let userLanguage = document.getElementsByName("lang").value;
+            let userInfo = document.getElementById("info").value;
+
+            userData = {
+                firstName : userFirstName,
+                lastName : userLastName,
+                mailAddres1 : userMailAddress1,
+                mailAddres2 : userMailAddress2,
+                city : userCity,
+                state : userState,
+                zip : userZip,
+                photo : userPhoto,
+                email : userEmail,
+                mobile : userMobile,
+                language : userLanguage,
+                additionalInfo : userInfo
+            };
+            
+            usersData.push(userData);
+            console.log(userData);
+            console.log(usersData);
+
+        }
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
