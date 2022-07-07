@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .center {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .top{
+                    padding-bottom: 500px;
+                }
+
+    </style>
+    
+</head>
+<body>
+
+    <form style="">
+        <table  class="center"  >
+            <caption style="color: red; font-weight: bold; ">
+                
+                <!-- Employee Registration Form -->
+                <div>
+                    <h2><img src="./img_1.jpg" height="70px" width="70px"> Employee Registration Form</h2> 
+                </div>
+            </caption>
+            <tr>
+                <td></td>
+                <td>
+                    <!-- salutation -->
+                    <div>
+                        <input type="radio" name="salutation" id="Mr" value="Mr" checked    >
+                        <label for="Mr">Mr.</label>
+
+                        <input type="radio" name="salutation" id="Mrs" value="Mrs">
+                        <label for="Mrs">Mrs.</label>
+
+                        <input type="radio" name="salutation" id="Ms" value="Ms">
+                        <label for="Ms">Ms.</label>
+                    </div>
+                </td>
+            </tr>
+            <!-- First Name -->
+            <tr>
+                <td>
+                    <label for="firstName">First Name</label>
+                </td>
+                <td>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                </td>
+            </tr>
+
+            <!-- Last Name -->
+            <tr>
+                <td>
+                    <label for="lastName">Last Name</label>
+                </td>
+                <td>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                </td>
+            </tr>
+
+            <!-- Mail Address1 -->
+            <tr>
+                <td>
+                    <label for="mailAddress1"> Mail Address1</label>
+                </td>
+                <td>
+                    <input type="text" name="mailAddress1" id="mailAddress1" placeholder=" ">
+                </td>
+            </tr>
+
+            <!-- Mail Address2 -->
+            <tr>
+                <td>
+                    <label for="mailAddress2">Mail Address2 </label>
+                </td>
+                <td>
+                    <input type="text" name="mailAddress2" id="mailAddress2" placeholder=" ">
+                </td>
+            </tr>
+            
+            <!-- City -->
+            <tr>
+                <td>
+                    <label for="city">City</label>
+                </td>
+                <td>
+                    <input type="text" name="city" id="city" placeholder=" ">
+                </td>
+            </tr>
+
+            <!-- State -->
+            <tr>
+                <td>
+                    <label for="state">State</label>
+                </td>
+                <td>
+                    <select name="state">
+                        <option name="state" value="Gujarat">Gujarat </option>
+                        <option value="Maharashtra">Maharashtra </option>
+                        <option value="Rajasthan">Rajasthan </option>
+                        <option value="Kerala">Kerala </option>
+                        <option value="Punjab">Punjab </option>
+                        <option value="Jammu Kashmir">Jammu Kashmir </option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Zip -->
+            <tr>
+                <td>
+                    <label for="zip">Zip</label>
+                </td>
+                <td>
+                    <input type="text" name="zip" id="zip" placeholder=" ">
+                </td>
+            </tr>
+
+            <!-- Photo -->
+            <tr>
+                <td>
+                    <label for="photo">Upload Photo</label>
+                </td>
+                <td>
+                    <input type="file" name="photo" id="photo" placeholder=" ">
+                </td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <td>
+                    <label for="email">Email </label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" placeholder="">
+                </td>
+            </tr>
+
+            <!-- Mobile -->
+            <tr>
+                <td>
+                    <label for="mobile"> Mobile</label>
+                </td>
+                <td>
+                    <input type="text" name="mobile" id="mobile" placeholder="+91 ">
+                </td>
+            </tr>
+
+            <!-- Language -->
+            <tr>
+                <td style="vertical-align:top">
+                    <label for="lang">Language Known  </label>
+                </td>
+                <td>
+                    <input type="checkbox" name="lang" id="Gujarati" checked>
+                    <label for="Gujarati">Gujarati</label> <br>
+
+                    <input type="checkbox" name="lang" id="Hindi" checked>
+                    <label for="Hindi">Hindi</label><br>
+
+                    <input type="checkbox" name="lang" id="English" checked>
+                    <label for="English">English</label><br>
+
+                    <input type="checkbox" name="lang" id="Marathi">
+                    <label for="Marathi">Marathi</label>
+                    
+                </td>
+            </tr>
+
+            <!-- Addition Info -->
+            <tr>
+                <td>
+                    <label for="info"> Addition Information</label>
+                </td>
+                <td>
+                    <textarea name="info" id="info" placeholder="Optional" rows="4"></textarea>
+                </td>
+            </tr>
+
+            <!-- Submit Reset Buttons -->
+            <tr>
+                <td>
+                   
+                </td>
+                <td>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
