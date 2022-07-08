@@ -27,25 +27,93 @@ function validations() {
   
   }
 
-  function userDetails(){
+//   
+function userDetails(){
     let userData = {};
-    let usersData = {};
+    let usersData = [];
+    // alert("Hello User");
 
-    let userSalutation = document.getElementsByName("salutation").value;
+    // Salutation 
+    var sal = document.getElementsByName('salutation');
+    let userSalutation;          
+            for(i = 0; i < sal.length; i++) {
+                if(sal[i].checked)
+                {
+                    userSalutation = sal[i].value;
+                }
+
+            }
+    
+    // First Name 
     let userFirstName = document.getElementById("firstName").value;
-    let userLastName = document.getElementById("lastName").value;
-    let userMailAddress1 = document.getElementById("mailAddress1").value;
-    let userMailAddress2 = document.getElementById("mailAddress2").value;
-    let userCity = document.getElementById("city").value;
-    let userState = document.getElementById("state").value;
-    let userZip = document.getElementById("zip").value;
-    let userPhoto = document.getElementById("photo").value;
-    let userEmail = document.getElementById("email").value;
-    let userMobile = document.getElementById("mobile").value;
-    let userLanguage = document.getElementsByName("lang").value;
-    let userInfo = document.getElementById("info").value;
-    alert ("Hello "+userSalutation+" "+userFirstName+" " );
+    alert("Hello "+userSalutation+" "+userFirstName);
 
+    // Last Name
+    let userLastName = document.getElementById("lastName").value;
+    // alert("Hello User "+userLastName);
+
+    // Mail Address1
+    let userMailAddress1 = document.getElementById("mailAddress1").value;
+    // alert("Hello User "+userMailAddress1);
+
+    // Mail Address2
+    let userMailAddress2 = document.getElementById("mailAddress2").value;
+    // alert("Hello User "+userMailAddress2);
+
+    // City
+    let userCity = document.getElementById("city").value;
+    // alert("Hello User "+userCity);
+
+    // State
+    // let state1 = document.getElementById("state").value;
+    let userState = document.getElementById("state").value;
+    // alert("State is "+state1);
+    // alert("State is "+userState);
+
+    // Zip
+    let userZip = document.getElementById("zip").value;
+    // alert("Zip is "+userZip);
+
+    // Photo
+    let userPhoto = document.getElementById("photo").value;
+    // alert("Photo file is "+userPhoto);
+
+    // Email
+    let userEmail = document.getElementById("email").value;
+    // alert("Email ID: "+userEmail);
+
+    // Mobile No
+    let userMobile = document.getElementById("mobile").value;
+    // alert("Mobile No : "+userMobile);
+
+    // Language
+    // let userLanguage = document.getElementsByName("lang").value;
+
+    var lang = document.getElementsByName('lang');
+    // alert("Language Known length : "+lang.length);
+
+    let userLanguage = " ";          
+            for(i = 0; i < lang.length; i++) {
+                if(lang[i].checked)
+                {
+                    userLanguage = userLanguage + " " + lang[i].value;
+                }
+
+            }
+            // alert("Language Known : "+userLanguage);
+
+
+    // Additional Info
+    let userInfo = document.getElementById("info").value;
+    // alert("Additional Info : "+userInfo);
+
+    // All Data Alert Check
+    alert("Hello "+userSalutation+" "+userFirstName+" "+userLastName
+    
+    +" "+userMailAddress1+" "+userMailAddress2+" "+userCity+" "
+    
+    +userState+" "+userZip+" "+userPhoto+" "+userEmail+" "+userMobile+" "+userLanguage+" "+userInfo);
+    
     userData = {
         firstName : userFirstName,
         lastName : userLastName,
@@ -60,29 +128,12 @@ function validations() {
         language : userLanguage,
         additionalInfo : userInfo
     };
+    // alert(userData.firstName);
+
     usersData.push(userData);
     console.log(userData);
     console.log(usersData);
-    alert(userData);
-    preventDefault(event);
-
-  }
-
-  let userData1 = {
-    firstName : "Satyawan",
-    lastName : "Auti",
-    mailAddres1 : "Rajuri",
-    mailAddres2 : "Junnar",
-    city : "Pune",
-    state : "Maharashtra",
-    zip : 412411,
-    photo : "img_8.jpg",
-    email : "auti.satyavan3@gmail.com",
-    mobile : 8888044524,
-    language : "English ,Hindi, Marathi",
-    additionalInfo : "None"
-};
-// let usersData1 = {};
-// usersData1.push(userData1);
-console.log(userData1);
-// console.log(usersData1);
+     
+    event.preventDefault(event);
+//   });
+}

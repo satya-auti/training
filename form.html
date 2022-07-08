@@ -7,25 +7,25 @@
     <title>Registration Form</title>
     <script src="./js/form.js">
 
-        // let userData1 = {
-        //     firstName : "Satyawan",
-        //     lastName : "Auti",
-        //     mailAddres1 : "Rajuri",
-        //     mailAddres2 : "Junnar",
-        //     city : "Pune",
-        //     state : "Maharashtra",
-        //     zip : 412411,
-        //     photo : "img_8.jpg",
-        //     email : "auti.satyavan3@gmail.com",
-        //     mobile : 8888044524,
-        //     language : "English ,Hindi, Marathi",
-        //     additionalInfo : "None"
-        // };
-        // let usersData1;
-        // usersData1.push(userData1);
-        // console.log(userData1);
-        // console.log(usersData1);
-    </script>
+    //     let userData1 = {
+    //         firstName : "Satyawan",
+    //         lastName : "Auti",
+    //         mailAddres1 : "Rajuri",
+    //         mailAddres2 : "Junnar",
+    //         city : "Pune",
+    //         state : "Maharashtra",
+    //         zip : 412411,
+    //         photo : "img_8.jpg",
+    //         email : "auti.satyavan3@gmail.com",
+    //         mobile : 8888044524,
+    //         language : "English ,Hindi, Marathi",
+    //         additionalInfo : "None"
+    //     };
+    //     let usersData1;
+    //     usersData1.push(userData1);
+    //     console.log(userData1);
+    //     console.log(usersData1);
+    // </script>
     <style>
         .center {
                     margin-left: auto;
@@ -118,13 +118,13 @@
                     <label for="state">State</label>
                 </td>
                 <td>
-                    <select name="state" required>
-                        <option name="state" value="Gujarat">Gujarat </option>
-                        <option value="Maharashtra">Maharashtra </option>
-                        <option value="Rajasthan">Rajasthan </option>
-                        <option value="Kerala">Kerala </option>
-                        <option value="Punjab">Punjab </option>
-                        <option value="Jammu Kashmir">Jammu Kashmir </option>
+                    <select  id="state" required>
+                        <option    value="Gujarat">Gujarat </option>
+                        <option    value="Maharashtra">Maharashtra </option>
+                        <option    value="Rajasthan">Rajasthan </option>
+                        <option    value="Kerala">Kerala </option>
+                        <option    value="Punjab">Punjab </option>
+                        <option    value="Jammu Kashmir">Jammu Kashmir </option>
                     </select>
                 </td>
             </tr>
@@ -175,16 +175,16 @@
                     <label for="lang">Language Known  </label>
                 </td>
                 <td>
-                    <input type="checkbox" name="lang" id="Gujarati" checked >
+                    <input type="checkbox" name="lang" id="Gujarati" value="Gujarati" checked >
                     <label for="Gujarati">Gujarati</label> <br>
 
-                    <input type="checkbox" name="lang" id="Hindi" checked >
+                    <input type="checkbox" name="lang" id="Hindi" value="Hindi" checked >
                     <label for="Hindi">Hindi</label><br>
 
-                    <input type="checkbox" name="lang" id="English" checked>
+                    <input type="checkbox" name="lang" id="English" value="English" checked>
                     <label for="English">English</label><br>
 
-                    <input type="checkbox" name="lang" id="Marathi">
+                    <input type="checkbox" name="lang" id="Marathi" value="Marathi" >
                     <label for="Marathi">Marathi</label>
                     
                 </td>
@@ -206,7 +206,7 @@
                     <input type="button" name="check" onclick="validations()" value="Check">
                 </td>
                 <td>
-                    <input type="submit" name="submit" onsubmit="userDetails()" value="Submit">
+                    <input type="submit" name="submit"  onclick="userDetails()" value="Submit">
                     <input type="reset" name="reset" value="Reset">
                 </td>
             </tr>
