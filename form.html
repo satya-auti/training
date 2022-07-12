@@ -13,7 +13,11 @@
                     margin-left: auto;
                     margin-right: auto;
                 }
-
+        .flex {
+            display: flex;
+            height: 30px;
+            width: 45px;
+        }
     </style>
     
 </head>
@@ -127,8 +131,11 @@
                     <label for="photo">Upload Photo</label>
                 </td>
                 <td>
-                    <input type="file" name="photo" id="photo" placeholder=" ">
+                    <input type="file" name="photo" id="photo" onchange="return fileValidation()" placeholder=" ">
+                    <!-- Image preview -->
+	                <div class="flex" id="imagePreview" ></div>
                 </td>
+                
             </tr>
 
             <!-- Email -->
@@ -179,6 +186,16 @@
                 </td>
                 <td>
                     <textarea name="info" id="info" placeholder="Optional" rows="4"></textarea>
+                </td>
+            </tr>
+            <!-- Password -->
+            <tr>
+                <td>
+                    <label for="password"> Password </label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="password" placeholder="Password" onchange="verifyPassword()" >
+                    <p id="errorPassword"></p>
                 </td>
             </tr>
 

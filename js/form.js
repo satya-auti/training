@@ -1,3 +1,51 @@
+// Check Image file & preview Image file
+function fileValidation() {
+    let fileData = document.getElementById("photo").value;
+    
+    // var filePath = fileInput.value;
+
+    // Allowing file type
+    let allowedExtensions =
+            /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+    
+    if (!allowedExtensions.exec(fileData)) {
+        alert('Invalid file type');
+        fileData.value = '';
+        return false;
+        // console.log("False");
+    }
+    else
+    {
+    
+        // Image preview
+        if (fileData.files && fileData.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('imagePreview').innerHTML ='<img src="'+ e.target.result + '"/>';
+            };
+            
+            reader.readAsDataURL(fileData.files[0]);
+        }
+    }
+}
+
+
+// Password Validation 
+function verifyPassword(){
+    var password = document.getElementById("password").value;
+    var msg = document.getElementById("errorPassword");
+    var regExp=/(?=.*[A-Z])\w{4,15}/;
+    if(password.match(regExp)){
+        msg.innerHTML="Strong Password";
+    } else{
+        if(password.length<4){
+            msg.innerHTML="poor password";
+        }else{
+            msg.innerHTML="Please use Special Characters & Capital letter";
+        }
+    }
+}
+
 function validations() {
 
     // Zip code Validation
